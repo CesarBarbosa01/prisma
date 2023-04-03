@@ -13,4 +13,7 @@ datasource db {
 Model User {
   id Int @id @default(autoincriment())
   email String @unique
+  name String
+  Post Post[]
+  created_at DateTime
 }
